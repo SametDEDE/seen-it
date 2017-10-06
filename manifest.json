@@ -9,8 +9,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://imgur.com/*"],
-      "js": ["dist/client.js"]
+      "matches": ["*://imgur.com/*"],
+      "js": ["dist/client.js"],
+      "run_at": "document_end"
     }
   ],
   "page_action": {
